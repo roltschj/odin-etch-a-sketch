@@ -1,17 +1,21 @@
 document.addEventListener('DOMContentLoaded', function(event) {
-    function addElement() {
-        const newDiv = document.createElement('div');
+    function addRow() {
+        const newDiv = document.createElement("div");
 
-        const newContent = document.createTextNode("If it worked, there should be sixteen of these.");
+        newDiv.className = "row";
 
-        newDiv.appendChild(newContent);
+        for ( j = 0; j < 4; j++ ) {
+            const newSquare = document.createElement("div");
+            newSquare.className = "gridSquare";
+            newDiv.appendChild(newSquare);
+        }
 
         const container = document.querySelector('#container');
 
         container.appendChild(newDiv);
     }
 
-    for ( i = 0; i < 16; i++ ) {
-        addElement();
+    for ( i = 0; i < 4; i++ ) {
+        addRow();
     }
 });

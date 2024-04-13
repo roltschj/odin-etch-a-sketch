@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.gridSquare {
+    display: inline-flex;
+    border: solid;
+    border-width: 1px;
+    flex: 1;
+    height: 100px;
+    width: 100px;
+}
+
+.row {
+    flex-grow: 1;
+    height: 100px;
+    width: 400px;
+}
+
