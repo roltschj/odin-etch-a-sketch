@@ -14,8 +14,6 @@
 
 .gridSquare {
     display: inline-flex;
-    /* border: solid;
-    border-width: .5px; */
     flex: 1;
 }
 
