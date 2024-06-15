@@ -30,6 +30,16 @@ document.addEventListener('DOMContentLoaded', function(event) {
         }
     }
 
+    function killGrid() {
+        document.querySelectorAll('.row').forEach(row => row.remove());
+    }
+
+    const killButton = document.querySelector('#killButton');
+    killButton.addEventListener("click", event => {
+        console.log("um.");
+        killGrid();
+    })
+
     makeGrid();
 
 });
