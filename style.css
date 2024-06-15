@@ -7,21 +7,17 @@
 .container {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 1000px;
 }
 
 .gridSquare {
     display: inline-flex;
     border: solid;
-    border-width: 1px;
+    border-width: .5px;
     flex: 1;
-    height: 100px;
-    width: 100px;
 }
 
 .row {
     flex-grow: 1;
-    height: 100px;
-    width: 400px;
 }
 
